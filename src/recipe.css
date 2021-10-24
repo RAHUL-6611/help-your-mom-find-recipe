@@ -1,0 +1,43 @@
+.card{
+    width: 25%;
+    background: rgb(255, 230, 2);
+    margin: 15px;
+    /* padding: 5px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img{
+    width: 100%;
+    height: 350px;
+    transition: all .35s;
+}
+
+h2,h4{
+    padding: 10px 0px;
+}
+
+.ingredient{
+    display: none;
+}
+
+
+.img:active{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.img:active ~ .ingredient{
+    display: block;
+} 
+
+/* .img:active */
+
+ul{
+    width: 90%;
+    list-style: none;
+    padding: 10px;
+}
